@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: black;
+            background-image: url(https://designshack.net/tutorialexamples/letitsnow/snow.png),
+            url(https://designshack.net/tutorialexamples/letitsnow/snow3.png),
+            url(https://designshack.net/tutorialexamples/letitsnow/snow2.png);
+            animation: snow 60s infinite;
+        }
+
+        @keyframes snow {
+            from {
+                background-position: 0
+            }
+            to {
+                background-position: 2500px 2500px, 2300px 2300px, 2600px, 2600px
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
