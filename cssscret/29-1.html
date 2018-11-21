@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ <style>
+h1{color:gray;}
+ 
+  
+  
+	.textshadow h1{ 
+		text-shadow:5px 5px 5px red;
+		}
+ </style>
+<script>
+var root = document.documentElement;
+console.log(root)
+console.log(root.style)
+if('textShadow' in root.style){
+	root.classList.add('textshadow')
+}else{
+	root.classList.add('no-textshadow')
+}
+</script>
+
+
+ </head>
+ <body>
+ 
+  <h1>	TEST </h1>
+ 
+ 
+ 
+ 
+ </body>
+</html>

@@ -1,0 +1,39 @@
+&&{둘중에하나}
+
+@keyframe 함수이름{
+
+20%{css속성명:속성값}
+50%{css속성명:속성값}
+100%{css속성명:속성값}
+
+}
+
+animation-delay: 2s;   // 대기시간
+animation-duration: 3s; //진행시간
+animation-fill-mode:both&&안쓰는것  // both:마지막값 유지, 안쓰는거:초기값으로 돌림
+animation-iteration-count: 2;&&infinite // 반복횟수
+animation-timing-function // 속도함수  cubic-bezier 사용가능
+animation-play-state: paused&&running    //정지,재생
+
+
+
+
+ animation: mymove 5s infinite;
+            (keyfram 함수이름, duration, literation-count)
+
+ animation: example 5s linear 2s infinite alternate;
+ animation-  (keyframe 함수이름), duration, timing-function, delay, iteration-count,
+
+
+
+
+
+
+
+
+
+
+
+/* @keyframes duration | timing-function | delay | 
+iteration-count | direction | fill-mode | play-state | name */
+animation: 3s ease-in 1s 2 reverse both paused slidein;

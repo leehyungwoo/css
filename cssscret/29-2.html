@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ <style>
+h1{color:gray;}
+.text-shadow h1{text-shadow:5px 5px 5px red;}
+ </style>
+<script>
+
+
+
+function testProperty(property){
+	var root = document.documentElement;
+	
+	if(property in root.style){
+		root.classList.add(property.toLowerCase())
+		return true;
+	}else{
+		root.classList.add('no-' + property.toLowerCase())
+		return false;
+	}
+}
+
+
+testProperty('text-shadow')
+</script>
+
+
+ </head>
+ <body>
+ 
+  <h1>	TEST </h1>
+ 
+ 
+ 
+ 
+ </body>
+</html>

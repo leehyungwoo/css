@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>JavaScript</title>
+<!-- <script src="jsFile.js" defer></script> -->
+<style>
+    .face {
+        position: relative;
+        width: 400px; height: 400px;
+        background: #F0C622;
+        border: 3px solid black;
+        border-radius: 50%;
+    }
+    .eye {
+        position: absolute;
+        width: 100px; height: 100px;
+        border: 2px solid black;
+        border-radius: 50%;
+        background: #fff;
+    }
+    .eye:nth-child(1) {
+        top: 30%; left: 10%;
+        animation: left-eye-motion 1s infinite normal;
+    }
+    .eye:nth-child(2) {
+        top: 30%; right: 10%;
+        animation: right-eye-motion 1s infinite normal;
+    }
+
+    @keyframes left-eye-motion {
+        0% { background: red; } 
+        50% { background: blue; }
+        100% { background: red; }
+    }
+
+    @keyframes right-eye-motion {
+        0% { background: blue; } 
+        50% { background: red; }
+        100% { background: blue; }
+    }
+
+    .mouth {
+        position: absolute;
+        bottom: 10%; left: 50%;
+        margin-left: -75px;
+        width: 150px; height: 30px;
+        border: 1px solid black;
+        background: black;
+    }
+
+    .rain {
+        position: absolute;
+        bottom: -40%; left: 50%;
+        margin-left: -75px;
+        width: 150px; height: 200px;
+        border: 1px solid black;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    .rain > div { float: left; }
+    .rain > div:nth-child(1) { width: 30px; height: 100%;  background: red; }
+    .rain > div:nth-child(2) { width: 30px; height: 100%;  background: coral; }
+    .rain > div:nth-child(3) { width: 30px; height: 100%;  background: yellow; }
+    .rain > div:nth-child(4) { width: 30px; height: 100%;  background: navy; }
+    .rain > div:nth-child(5) { width: 30px; height: 100%;  background: purple; }
+    .face:hover .rain {
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+    <div class="face">
+        <div class="eye"></div>
+        <div class="eye"></div>
+        <div class="mouth"></div>
+        <div class="rain">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>

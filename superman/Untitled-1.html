@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+      *{margin:0; padding:0}
+        html,body{width:100%; height:100%;   background-color: black;}
+        img{  width:100px; margin-left: 130px; animation:moveCar 15s infinite;}
+        img:nth-child(1){animation-delay: 2s;}
+        img:nth-child(2){animation-delay: 4s;}
+        img:nth-child(3){animation-delay: 6s;}
+        img:nth-child(4){animation-delay: 8s;}
+       
+        div{width:100%; height:100%; background:url('img/17.jpg');  animation:moveWay 40s infinite;}
+
+
+        @keyframes moveWay{
+            from {background-position:0px 0px;}
+            to {background-position:0px -9000px;}
+        }
+
+        @keyframes moveCar{
+            20%{ margin-top:100px; margin-left:100px;}
+            40%{ margin-top:300px;margin-left:10px;}
+            60%{ margin-top:400px;margin-left:100px;}
+            100%{ margin-left:210px; margin-left:400px;}
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img/car1.gif">
+        <img src="img/car2.gif">
+        <img src="img/car3.gif">
+        <img src="img/car4.gif">
+
+    </div>
+</body>
+</html>
